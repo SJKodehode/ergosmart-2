@@ -34,10 +34,11 @@ export function Hero() {
             transition={{duration: 0.6, delay: 0}}
             className="md:col-span-1 md:row-span-2 xl:grid hidden xl:col-start-2">
               <Image
-                src={'/assets/resized/hero-img-1.jpg'}
+                src={'/assets/resized/hero-img-1-alt.jpg'}
                 alt="Ergonomisk klut i bruk"
                 className="rounded-3xl shadow-lg opacity-100 hidden md:grid"
                 fetchPriority="high"
+                width={200}
                 classNames={{
                   wrapper: "w-full h-full"
                 }}
@@ -52,7 +53,7 @@ export function Hero() {
               <Image
                 src={'/assets/resized/hero-image-2.jpg'}
                 alt="Person bruker ergonomisk håndkle"
-                className="rounded-3xl shadow-lg opacity-100 xl:h-[449px]"
+                className="rounded-3xl shadow-lg opacity-100"
                 fetchPriority="high"
                 classNames={{
                   wrapper: " w-full h-full"
