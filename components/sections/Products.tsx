@@ -44,6 +44,7 @@ export function Products() {
             alt="ErgoSmart produktsamling"
             className="rounded-2xl shadow-2xl opacity-100"
             width={608}
+            loading="lazy"
             classNames={{
               wrapper: "w-full"
             }}
@@ -64,6 +65,7 @@ export function Products() {
                 src={`/assets/resized/washcloth-${1 + index}.jpg`}
                 alt={`ErgoSmart produkt ${item}`}
                 className="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 opacity-100"
+                loading="lazy"
                 width={181}
                 classNames={{
                   wrapper: "w-full aspect-rectangle"

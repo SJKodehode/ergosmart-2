@@ -48,6 +48,7 @@ export function HealthcareSection() {
                 <Image
                   src={`/assets/resized/instructions-image-1.jpg`}
                   alt="Assistert pleie bilde 1"
+                  loading="lazy"
                   className="w-full h-full object-cover opacity-100"
                 />
                 </CardBody>
@@ -66,6 +67,7 @@ export function HealthcareSection() {
                 <Image
                   src={`/assets/resized/instructions-image-2.jpg`}
                   alt="Assistert pleie bilde 2"
+                  loading="lazy"
                   className="w-full h-full object-cover opacity-100"
                 />
                 </CardBody>
@@ -84,6 +86,7 @@ export function HealthcareSection() {
                 <Image
                   src={`/assets/resized/instructions-image-3.jpg`}
                   alt="Assistert pleie bilde 3"
+                  loading="lazy"
                   className="w-full h-full object-cover opacity-100"
                 />
                 </CardBody>

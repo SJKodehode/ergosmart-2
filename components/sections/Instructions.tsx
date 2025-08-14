@@ -62,6 +62,7 @@ export default function Instructions() {
                 <Image
                   src={`/assets/resized/instructions-${1 + index}.jpg`}
                   alt={`Bruksanvisning steg ${item}`}
+                  loading="lazy"
                   className="rounded-xl shadow-lg opacity-100"
                 />
               </motion.div>
