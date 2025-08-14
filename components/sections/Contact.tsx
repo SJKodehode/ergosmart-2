@@ -5,7 +5,8 @@ import { Input, Textarea } from "@heroui/input";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { addToast } from "@heroui/toast";
+
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -16,7 +17,6 @@ export function Contact() {
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,7 +27,7 @@ export function Contact() {
       // For now, we'll just simulate success
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      toast({
+      addToast({
         title: "Melding sendt!",
         description: "Vi kommer tilbake til deg innen 24 timer på virkedager.",
       });
@@ -40,10 +40,10 @@ export function Contact() {
         message: ""
       });
     } catch (error) {
-      toast({
+      addToast({
         title: "Feil ved sending",
         description: "Prøv igjen eller ring oss direkte på 94 07 51 09",
-        variant: "destructive"
+        variant: "bordered"
       });
     } finally {
       setIsSubmitting(false);
