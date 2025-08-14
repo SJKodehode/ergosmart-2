@@ -62,7 +62,7 @@ export function Products() {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <Image
-                src={`/assets/resized/washcloth-${1 + index}.jpg`}
+                src={`/assets/resized/washcloth-${1 + index}_converted.avif`}
                 alt={`ErgoSmart produkt ${item}`}
                 className="rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 opacity-100"
                 loading="lazy"

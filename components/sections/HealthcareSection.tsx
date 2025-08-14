@@ -46,7 +46,7 @@ export function HealthcareSection() {
               <Card className="rounded-2xl shadow-lg overflow-hidden h-fit">
                 <CardBody className="p-0 h-full">
                 <Image
-                  src={`/assets/resized/instructions-image-1.jpg`}
+                  src={`/assets/resized/instructions-image-1_converted.avif`}
                   alt="Assistert pleie bilde 1"
                   loading="lazy"
                   className="w-full h-full object-cover opacity-100"
@@ -65,7 +65,7 @@ export function HealthcareSection() {
               <Card className="rounded-2xl shadow-lg overflow-hidden h-fit">
                 <CardBody className="p-0 h-full">
                 <Image
-                  src={`/assets/resized/instructions-image-2.jpg`}
+                  src={`/assets/resized/instructions-image-2_converted.avif`}
                   alt="Assistert pleie bilde 2"
                   loading="lazy"
                   className="w-full h-full object-cover opacity-100"
@@ -84,7 +84,7 @@ export function HealthcareSection() {
               <Card className="rounded-2xl shadow-lg overflow-hidden h-fit">
                 <CardBody className="p-0 h-full">
                 <Image
-                  src={`/assets/resized/instructions-image-3.jpg`}
+                  src={`/assets/resized/instructions-image-3_converted.avif`}
                   alt="Assistert pleie bilde 3"
                   loading="lazy"
                   className="w-full h-full object-cover opacity-100"

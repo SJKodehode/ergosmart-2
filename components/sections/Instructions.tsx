@@ -60,7 +60,7 @@ export default function Instructions() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <Image
-                  src={`/assets/resized/instructions-${1 + index}.jpg`}
+                  src={`/assets/resized/instructions-${1 + index}_converted.avif`}
                   alt={`Bruksanvisning steg ${item}`}
                   loading="lazy"
                   className="rounded-xl shadow-lg opacity-100"
