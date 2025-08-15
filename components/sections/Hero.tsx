@@ -48,7 +48,7 @@ export function Hero() {
             <motion.div 
             initial={{ opacity: 0, scale: 0.9}}
             animate={{ opacity: 1, scale: 1}}
-            transition={{duration: 0.6, delay: 0.3}}
+            transition={{duration: 0.6, delay: 0.2}}
             className="xl:col-span-3 xl:row-span-3 mt-10 xl:mt-0">
               <Image
                 src={'/assets/resized/hero-image-2_converted.avif'}
@@ -65,7 +65,7 @@ export function Hero() {
             <motion.div 
             initial={{ opacity: 0, scale: 0.8}}
             animate={{ opacity: 1, scale: 1}}
-            transition={{duration: 0.6, delay: 0.6}}
+            transition={{duration: 0.6, delay: 0.4}}
             className="md:col-span-1 md:row-span-1 xl:grid hidden xl:col-start-2">
               <Image
                 src={'/assets/resized/product-collection_converted.avif'}
