@@ -26,6 +26,7 @@
     "@heroui/toast": "^2.0.14",
     "@react-aria/ssr": "3.9.10",
     "@react-aria/visually-hidden": "3.8.26",
+    "@supabase/supabase-js": "^2.55.0",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "clsx": "2.1.1",
@@ -59,6 +60,7 @@
     "globals": "16.0.0",
     "postcss": "8.5.6",
     "prettier": "3.5.3",
+    "supabase": "^2.34.3",
     "tailwind-variants": "2.0.1",
     "tailwindcss": "4.1.11",
     "typescript": "5.6.3"

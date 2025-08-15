@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { Card, CardBody } from "@heroui/card";
 import { Button } from "@heroui/button";
 import { Input, Textarea } from "@heroui/input";
@@ -6,7 +6,13 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { addToast } from "@heroui/toast";
+import { createClient } from "@supabase/supabase-js";
 
+// Create Supabase client
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -23,15 +29,25 @@ export function Contact() {
     setIsSubmitting(true);
 
     try {
-      // Here we would normally send to Supabase edge function
-      // For now, we'll just simulate success
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
+      const { error } = await supabase.from("contact_messages").insert([
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          message: formData.message
+        }
+      ]);
+
+      if (error) {
+        throw error;
+      }
+
       addToast({
         title: "Melding sendt!",
         description: "Vi kommer tilbake til deg innen 24 timer på virkedager.",
       });
-      
+
       setFormData({
         name: "",
         email: "",
@@ -39,10 +55,10 @@ export function Contact() {
         company: "",
         message: ""
       });
-    } catch (error) {
+    } catch (err: any) {
       addToast({
         title: "Feil ved sending",
-        description: "Prøv igjen eller ring oss direkte på 94 07 51 09",
+        description: err.message || "Prøv igjen eller ring oss direkte på 94 07 51 09",
         variant: "bordered"
       });
     } finally {
@@ -157,7 +173,6 @@ export function Contact() {
                       </p>
                     </div>
                   </div>
-                  
                   <div className="flex items-start gap-4">
                     <Phone className="w-6 h-6 text-green-accent flex-shrink-0 mt-1" />
                     <div>
@@ -165,7 +180,6 @@ export function Contact() {
                       <p className="text-muted-foreground">94 07 51 09</p>
                     </div>
                   </div>
-                  
                   <div className="flex items-start gap-4">
                     <Mail className="w-6 h-6 text-green-accent flex-shrink-0 mt-1" />
                     <div>
@@ -173,7 +187,6 @@ export function Contact() {
                       <p className="text-muted-foreground">fulbert@ergosmart.no</p>
                     </div>
                   </div>
-                  
                   <div className="flex items-start gap-4">
                     <Clock className="w-6 h-6 text-green-accent flex-shrink-0 mt-1" />
                     <div>
