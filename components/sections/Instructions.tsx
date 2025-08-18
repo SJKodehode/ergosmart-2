@@ -80,7 +80,7 @@ export default function Instructions() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="flex gap-4"
               >
-                <div className="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">
+                <div className="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center self-center-safe justify-center font-bold text-xl">
                   {step.number}
                 </div>
                 <p className="text-base md:text-lg leading-relaxed pt-2">
