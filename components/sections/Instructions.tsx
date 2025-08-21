@@ -29,12 +29,12 @@ export default function Instructions() {
   const benefits = [
     "Ergonomisk design som gjør det enkelt å nå hele kroppen",
     "Mykt, absorberende materiale som er skånsomt mot huden", 
-    "Perfekt for personer med redusert bevegelighets",
+    "Perfekt for personer med redusert bevegelighet",
     "Slitesterkt materiale som tåler hyppig bruk og vask",
     "Tåler vask fra 60 °C til 90 °C, som sikrer en høy hygienestandard",
     "Inneholder ikke mikroplast, som er skadelig for miljøet",
     "Støtter universell utforming",
-    "Gir bedre visuell støtte"
+    "Fargekontraster gir bedre visuell støtte"
   ];
   return (
     <section className="py-20 lg:py-40 bg-primary/10">
