@@ -3,6 +3,7 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@heroui/navbar";
 import { Button } from "@heroui/button";
 import { motion } from "framer-motion";
 import { ThemeSwitch } from "../ThemeSwitcher";
+import Image from "next/image";
 
 export default function Header() {
   const scrollToContact = () => {
@@ -24,7 +25,9 @@ export default function Header() {
         <div className="flex w-full justify-between mx-4 sm:mx-8 lg:mx-20">
 
         <NavbarBrand>
-          <h1 className="text-2xl sm:text-4xl font-bold text-background">
+          
+          <Image src={'/assets/resized/colorsCloth.png'} width={28} height={28} alt={'our logo'} />
+          <h1 className="text-2xl sm:text-4xl font-bold ml-2 mt-1 text-background">
             Ergo Smart
           </h1>
         </NavbarBrand>
