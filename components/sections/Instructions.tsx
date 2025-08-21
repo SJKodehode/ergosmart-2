@@ -27,7 +27,7 @@ export default function Instructions() {
   ];
   
   const benefits = [
-    "Ergonomisk design som gjør det enkelt å nå hele overkroppen",
+    "Ergonomisk design som gjør det enkelt å nå hele kroppen",
     "Mykt, absorberende materiale som er skånsomt mot huden", 
     "Perfekt for personer med redusert bevegelighets",
     "Slitesterkt materiale som tåler hyppig bruk og vask",
