@@ -32,7 +32,9 @@ export default function Instructions() {
     "Perfekt for personer med redusert bevegelighets",
     "Slitesterkt materiale som tåler hyppig bruk og vask",
     "Tåler vask fra 60 °C til 90 °C, som sikrer en høy hygienestandard",
-    "Inneholder ikke mikroplast, som er skadelig for miljøet"
+    "Inneholder ikke mikroplast, som er skadelig for miljøet",
+    "Støtter universell utforming",
+    "Gir bedre visuell støtte"
   ];
   return (
     <section className="py-20 lg:py-40 bg-primary/10">
