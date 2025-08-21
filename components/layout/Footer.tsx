@@ -36,7 +36,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Våre fordeler</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>• OEKO-TEX sertifisert</li>
+              <li>• OEKO-TEX-100 sertifisert</li>
               <li>• Bærekraftig produksjon</li>
               <li>• 30 dagers prøveperiode</li>
               <li>• Norsk kvalitet</li>
